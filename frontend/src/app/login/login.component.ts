@@ -1,4 +1,8 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
+import {HttpService} from "../http.service";
+import {ILoginResponse} from "../Interfaces/ILoginResponse";
+import {DataService} from "../data.service";
+import {error} from "@angular/compiler-cli/src/transformers/util";
 
 @Component({
   selector: 'app-login',
@@ -9,15 +13,26 @@ export class LoginComponent implements OnInit {
 
   username!: string;
   password!: string;
+  isLoggedIn: boolean = false;
 
-  constructor() { }
+  user: any;
+
+  constructor(private dataService: DataService, private httpService: HttpService) {
+    // this.dataService.currentUser$.subscribe(
+    //   (userData) => {
+    //     this.user = userData
+    //   }
+    // )
+  }
 
   ngOnInit(): void {
   }
 
   onLogin() {
-    console.log(this.username)
-    console.log(this.password)
+    // this.dataService.login(this.username, this.password);
+    this.httpService.login(this.username, this.password).subscribe(
+      (data) => {this.user = data},
+      (error) => {console.error(error)}
+    )
   }
-
 }

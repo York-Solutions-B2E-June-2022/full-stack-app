@@ -2,8 +2,11 @@ package net.yorksoultions.backend;
 
 import org.springframework.web.bind.annotation.*;
 
+import java.util.HashMap;
+
 @RestController
 @RequestMapping("/account")
+@CrossOrigin
 public class AccountController {
 
     AccountService accountService;
@@ -17,8 +20,8 @@ public class AccountController {
         accountService.create(requestBody.username, requestBody.password);
     }
 
-    @GetMapping("/login")
-    public boolean login(@RequestBody AccountAuthRequest requestBody) {
+    @PostMapping("/login")
+    public HashMap login(@RequestBody AccountAuthRequest requestBody) {
         return accountService.login(requestBody.username, requestBody.password);
     }
 }

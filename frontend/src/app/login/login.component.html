@@ -3,3 +3,10 @@
   <input [(ngModel)]="password" type="password" placeholder="password">
   <button (click)="onLogin()">Login</button>
 </div>
+
+
+<div *ngIf="user">
+  {{user.firstName}}
+  {{user.phoneNumber}}
+  {{user.address}}
+</div>

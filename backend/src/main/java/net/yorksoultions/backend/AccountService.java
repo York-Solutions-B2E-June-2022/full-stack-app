@@ -4,6 +4,7 @@ import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Service;
 import org.springframework.web.server.ResponseStatusException;
 
+import java.util.HashMap;
 import java.util.Optional;
 
 @Service
@@ -28,7 +29,7 @@ public class AccountService {
         accountRepository.save(account);
     }
 
-    public boolean login(String username, String password) {
+    public HashMap login(String username, String password) {
         if (username == null && password == null) {
             throw new ResponseStatusException(HttpStatus.UNAUTHORIZED);
         }
@@ -38,6 +39,11 @@ public class AccountService {
             throw new ResponseStatusException(HttpStatus.UNAUTHORIZED);
         }
 
-        return true;
+        HashMap data = new HashMap();
+        data.put("firstName", "adam");
+        data.put("phoneNumber", "555-555-555");
+        data.put("address", "123 main street");
+
+        return data;
     }
 }
