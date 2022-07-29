@@ -1,0 +1,94 @@
+GET http://localhost:8080/account/login
+Content-Type: application/json
+
+{
+  "username": "usear",
+  "password": "user"
+}
+
+<> 2022-07-29T114343.401.json
+
+###
+
+GET http://localhost:8080/account/login
+Content-Type: application/json
+
+{
+  "username": "usear",
+  "password": "user"
+}
+
+<> 2022-07-29T114342.401.json
+
+###
+
+GET http://localhost:8080/account/login
+Content-Type: application/json
+
+{
+  "username": "usear",
+  "password": "user"
+}
+
+<> 2022-07-29T114339.401.json
+
+###
+
+GET http://localhost:8080/account/login
+Content-Type: application/json
+
+{
+  "username": "user",
+  "password": "user"
+}
+
+<> 2022-07-29T114334.200.json
+
+###
+
+GET http://localhost:8080/account/login
+Content-Type: application/json
+
+{
+  "username": "user",
+  "password": "user"
+}
+
+<> 2022-07-29T114242.401.json
+
+###
+
+POST http://localhost:8080/account/create
+Content-Type: application/json
+
+{
+  "username": "user",
+  "password": "user"
+}
+
+###
+
+POST http://localhost:8080/account/create
+Content-Type: application/json
+
+{
+  "username": "user",
+  "password": "user"
+}
+
+<> 2022-07-29T114131.400.json
+
+###
+
+POST http://localhost:8080/account/create
+Content-Type: application/json
+
+{
+  "username": "user",
+  "password": "user"
+}
+
+<> 2022-07-29T114041.400.json
+
+###
+
