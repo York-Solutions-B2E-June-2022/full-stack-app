@@ -1,3 +1,25 @@
+POST http://localhost:8080/account/create
+Content-Type: application/json
+
+{
+  "username": "admin",
+  "password": "admin"
+}
+
+###
+
+POST http://localhost:8080/account/create
+Content-Type: application/json
+
+{
+  "username": "user",
+  "password": "user"
+}
+
+<> 2022-07-29T161336.400.json
+
+###
+
 GET http://localhost:8080/account/login
 Content-Type: application/json
 

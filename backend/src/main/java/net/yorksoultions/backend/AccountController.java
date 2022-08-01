@@ -16,17 +16,25 @@ public class AccountController {
     }
 
     @PostMapping("/create")
-    public void create(@RequestBody AccountAuthRequest requestBody) {
+    public void create(@RequestBody Account requestBody) {
         accountService.create(requestBody.username, requestBody.password);
     }
 
+    /*
+    {
+      "username": "admin",
+      "password": "admin",
+      "foo": "some data"
+    }
+ */
     @PostMapping("/login")
-    public HashMap login(@RequestBody AccountAuthRequest requestBody) {
-        return accountService.login(requestBody.username, requestBody.password);
+    public HashMap login(@RequestBody Account requestBody) {
+        return accountService.login(requestBody.username, requestBody.password, requestBody.foo);
     }
 }
 
 class AccountAuthRequest {
     public String username;
     public String password;
+    public String foo;
 }

@@ -4,18 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="41d5a8a1-9ca6-451e-9bb5-bd8b342aabf4" name="Changes" comment="init">
-      <change afterPath="$PROJECT_DIR$/frontend/src/app/Interfaces/ILoginResponse.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+    <list default="true" id="41d5a8a1-9ca6-451e-9bb5-bd8b342aabf4" name="Changes" comment="added frontend - backend connection">
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/http-requests-log.http" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/httpRequests/http-requests-log.http" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/backend/src/main/java/net/yorksoultions/backend/AccountController.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/net/yorksoultions/backend/AccountController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/main/java/net/yorksoultions/backend/AccountService.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/net/yorksoultions/backend/AccountService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/app.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/http.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/http.service.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/login/login.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/login/login.component.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/app/login/login.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/login/login.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/tsconfig.app.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/tsconfig.app.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/tsconfig.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -94,7 +87,7 @@
       <recent name="$PROJECT_DIR$" />
     </key>
   </component>
-  <component name="RunManager" selected="npm.Angular CLI Server (frontend)">
+  <component name="RunManager" selected="HTTP Request.generated-requests | #1">
     <configuration name="generated-requests | #1" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$APPLICATION_CONFIG_DIR$/scratches/generated-requests.http" requestIdentifier="#1" runType="Run single request">
       <method v="2" />
     </configuration>
@@ -155,10 +148,10 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="npm.Angular CLI Server (frontend)" />
-        <item itemvalue="Spring Boot.BackendApplication" />
-        <item itemvalue="HTTP Request.generated-requests | #2" />
         <item itemvalue="HTTP Request.generated-requests | #1" />
+        <item itemvalue="Spring Boot.BackendApplication" />
+        <item itemvalue="npm.Angular CLI Server (frontend)" />
+        <item itemvalue="HTTP Request.generated-requests | #2" />
         <item itemvalue="Docker.backend.fs-database: Compose Deployment" />
       </list>
     </recent_temporary>
@@ -173,7 +166,8 @@
       <updated>1659110860992</updated>
       <workItem from="1659110862430" duration="3198000" />
       <workItem from="1659118116357" duration="93000" />
-      <workItem from="1659118290060" duration="5761000" />
+      <workItem from="1659118290060" duration="6387000" />
+      <workItem from="1659129043367" duration="1162000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <created>1659117977115</created>
@@ -182,7 +176,21 @@
       <option name="project" value="LOCAL" />
       <updated>1659117977115</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="added frontend - backend connection">
+      <created>1659124661667</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1659124661667</updated>
+    </task>
+    <task id="LOCAL-00003" summary="added frontend - backend connection">
+      <created>1659124671670</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1659124671670</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -201,6 +209,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="init" />
-    <option name="LAST_COMMIT_MESSAGE" value="init" />
+    <MESSAGE value="added frontend - backend connection" />
+    <option name="LAST_COMMIT_MESSAGE" value="added frontend - backend connection" />
   </component>
 </project>

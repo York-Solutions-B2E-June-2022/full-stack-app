@@ -29,10 +29,16 @@ export class LoginComponent implements OnInit {
   }
 
   onLogin() {
-    // this.dataService.login(this.username, this.password);
-    this.httpService.login(this.username, this.password).subscribe(
-      (data) => {this.user = data},
-      (error) => {console.error(error)}
-    )
+    // OLD SYNTAX
+    // this.httpService.login(this.username, this.password).subscribe(
+    //   (data) => {this.user = data},
+    //   (error) => {console.error(error)}
+    // )
+
+    // NEW SYNTAX
+    this.httpService.login(this.username, this.password).subscribe({
+      next: (data) => { this.user = data },
+      error: () => {}
+    })
   }
 }
